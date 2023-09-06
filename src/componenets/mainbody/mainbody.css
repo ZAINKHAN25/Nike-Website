@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Open+Sans&family=Poppins:ital,wght@1,800&display=swap');
+
+
+body{
+    overflow-x: hidden;
+}
+
+.bodyarea{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+}
+
+.headingoftextarea{
+    font-size: 62px;
+    font-weight: bold;
+    font-family: Poppins;
+    margin-bottom: 50px;
+    line-height: 90%;
+}
+
+
+.btnareaoftextarea{
+    margin: 30px 5px;
+}
+
+.redbtn{
+    background-color: red;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 2px solid red;
+    transition: all .3s;
+}
+
+.redbtn:hover{
+    border: 2px solid red;
+    font-weight: 700;
+    background-color: white;
+    color: red;
+}
+
+.whitebtn{
+    background-color: transparent;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 2px solid black;
+    transition: all .3s;
+    margin-left: 20px;
+}
+
+.whitebtn:hover{
+    font-weight: 700;
+    background-color: black;
+    color: white;
+}
+
+.againparaoftextarea{
+    margin-bottom: 10px;
+}
+
+.leftsidepush{
+    margin-left: 10px;
+}
+
+.imagearea img{
+    margin-right: -10vw;
+    width: 60vw;
+}
+
+@media (max-width: 590px) {
+    .bodyarea{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 420px) {
+    .imagearea img{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .headingoftextarea{
+        font-size: 42px;
+    }
+
+    .whitebtn{
+        display: block;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .imagearea img{
+        width: 90vw;
+    }
+}
